@@ -12,8 +12,8 @@ vue3 + vuex + vue-router + elementPlus + nodeJs + MySQL(navcat)
 ## 接口说明
 express运行在3002接口上。
 ### 用户信息相关接口
-1.  http://localhost:3002/login/codeFake  ->get请求，在服务端通过rand函数生成验证码进行验证，服务端使用Map将验证码保存起来进行验证，60秒后失效
-2.  http://localhost:3002/login/codeFakeAli  ->get请求，使用阿里大鱼短信平台向手机发送真实验证短信（需要付费），服务端使用Map将验证码保存起来进行验证，60秒后失效
+1.  http://localhost:3002/login/codeFake  ->get请求，在服务端通过rand函数生成验证码进行验证，请在服务端控制台查看生成的验证码，服务端使用Map将验证码保存对用户填写的验证码进行验证，60秒后失效
+2.  http://localhost:3002/login/codeFakeAli  ->get请求，使用阿里大鱼短信平台向手机发送真实验证短信（需要申请key和secret），服务端使用Map将验证码保存起来进行验证，60秒后失效
 3.  http://localhost:3002/login/register  ->post请求，验证客户端发来的注册信息，如果数据库不存在则注册成功，如果数据库已存在该用户则返回失败
 4.  http://localhost:3002/login/validate  ->post请求，验证客户端发送的验证码是否正确
 5.  http://localhost:3002/login/getinfo ->get请求，在用户登录成功时向服务端发送身份信息的请求，用于页面渲染
@@ -22,7 +22,7 @@ express运行在3002接口上。
 1.  http://localhost:3002/app/makeappoint  ->post请求，向数据库提交预约信息
 2.  http://localhost:3002/app/getapplist  ->get请求，向数据库查询预约信息
 3.  http://localhost:3002/app/delapplist  ->post请求，向数据库删除预约信息
-4.  http://localhost:3002/app/getteacher  ->get请求，向数据库获取所有老师的信息，用于学生预约时选择老师
+4.  http://localhost:3002/app/getteacher  ->get请求，向数据库获取所有老师的信息，用于学生预约时获取老师列表
 
 
 ## 登录/注册界面
