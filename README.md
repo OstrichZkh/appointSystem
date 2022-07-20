@@ -9,7 +9,7 @@
 > P.S. 本项目最初是由于我导问我能不能实现师生之间在线预约而做出来的，给我导看他觉得太过麻烦，最终使用腾讯在线文档实现了本项目的大多数功能（悲）。
 
 ## 技术栈
-vue3 + vuex + vue-router + elementPlus + nodeJs + MySQL(navcat)
+Vue3 + Vuex + Vue-router + elementPlus + nodeJs + MySQL(navcat)
 
 ## 接口说明
 express运行在3002接口上。
